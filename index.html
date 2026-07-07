@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Daily Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="login-container">
+
+    <h1>Smart Daily Planner</h1>
+
+    <p class="subtitle">Login to your account</p>
+
+    <div class="input-box">
+
+        <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <p id="emailError" class="error"></p>
+    </div>
+
+    <div class="input-box">
+
+        <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <input type="password" id="password" placeholder="Enter password">
+         
+         <p id="passwordError" class="error"></p>
+    </div>
+     
+<button class="login-btn" id="loginBtn">
+    Login
+</button>
+
+<p id="successMsg" class="success"></p>
+<p class="divider">— OR Login With —</p>
+
+<button class="social-btn">
+    <i class="fa-brands fa-apple"></i>
+    Continue with Apple
+</button>
+
+<button class="social-btn">
+    <i class="fa-brands fa-google"></i>
+    Continue with Google
+</button>
+
+</div>
+<div class="home-page" id="homePage">
+
+    <div class="header">
+
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/100?img=32" alt="Profile">
+
+            <div>
+                <p>Hello,</p>
+                <h2>Hamna</h2>
+            </div>
+
+        </div>
+
+        <div class="icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-bell"></i>
+
+        </div>
+
+    </div>
+
+    <div class="planner-card">
+        <div class="tabs">
+
+    <button class="tab-btn active" id="myTaskBtn">
+        My Tasks
+    </button>
+
+    <button class="tab-btn" id="progressBtn">
+        In Progress
+    </button>
+
+    <button class="tab-btn" id="completedBtn">
+        Completed
+    </button>
+
+</div>
+
+<div id="tabContent">
+    <h2 class="task-heading">Today's Tasks</h2>
+
+<div class="task-list" id="taskList">
+
+</div>
+
+</div>
+
+    </div>
+
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
